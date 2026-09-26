@@ -1,46 +1,65 @@
-# 🚀 Mi Proyecto de Vida: Libertad Financiera para Desarrolladores de Software
-### *"El Desarrollador Soberano: De vender horas por un sueldo a dominar mi tiempo y mi código"*
+# 🎬 Scroll Tied Video Section: LIBERTAD FINANCIERA
+
+Una experiencia cinemática *one-page* interactiva que representa la meta personal de **Libertad Financiera** mediante un sistema de video acoplado al scroll (scroll-tied), decodificación de fotogramas mediante **WebCodecs + MP4Box** con aceleración por hardware/software, y tipografía editorial minimalista.
 
 ---
 
-## 🌟 Los 3 Pilares Fundamentales de este Proyecto
+## 🛠️ Stack Tecnológico
 
-Este proyecto web local fue diseñado con 3 objetivos vitales claros e interactivos:
-
-### 1. 💡 Dar a entender qué es la "Libertad Financiera"
-- **No es dejar de hacer nada ni acumular lujos:** Es la **soberanía sobre el propio tiempo y la energía vital**.
-- **Desacoplar la supervivencia del reloj:** Tener activos y rendimientos pasivos que cubran el 100% de tu costo de vida para que trabajar sea una opción creativa y no una necesidad de supervivencia.
-- **Módulo Interactivo:** *El Espejo de Realidades* (Contraste directo entre el *Dev en la Carrera de la Rata* vs el *Dev Soberano*) y las *4 Dimensiones de la Libertad* (Temporal, Creativa, Geográfica y Mental).
-
----
-
-### 2. 💻 El Camino del Desarrollador de Software
-Aprovecha el **superpoder de la industria tecnológica**: el apalancamiento global y los ingresos en monedas fuertes (USD/EUR) trabajando desde cualquier lugar.
-
-1. **Fase 1: Junior & Cimientos ($700 - $1,500/m):** Dominar stack base (JS/TS, Python, Git, Clean Code), cero deudas tóxicas y construir el búnker de paz mental de 3 meses.
-2. **Fase 2: Mid Remoto Global ($2,500 - $4,500/m en USD):** Trabajo para empresas internacionales. **Clave maestra:** Evitar la inflación de estilo de vida, mantener costos locales e invertir el 50-60% en ETFs globales (VOO / VWRA).
-3. **Fase 3: Senior / Staff / Tech Lead ($5,000 - $9,000+/m):** Aportes mensuales masivos a inversión ($3,000 - $5,000/m). Los rendimientos del interés compuesto superan el sueldo mensual de un junior.
-4. **Fase 4: Micro-SaaS & Software como Activo:** Crear herramientas digitales independientes o APIs que generen suscripciones recurrentes (MRR) mientras duermes.
-5. **Fase 5: El Dev Soberano (FIRE Pleno):** Libertad financiera absoluta alcanzada según la regla del 4%. Trabajar en código se convierte en un arte, una vocación y una contribución al mundo.
-
-- **Módulo Interactivo:** *El Árbol de Habilidades y Riqueza Tech* con selector interactivo y botón de sincronización directa con el simulador.
+- **Vite + React 18 + TypeScript**
+- **Tailwind CSS 3**
+- **mp4box ^0.5.2** (Extracción de pistas y configuración de muestras para decodificación)
+- **WebCodecs API** (`VideoDecoder` para decodificar fotogramas y dibujar en canvas con caché LRU)
+- **lucide-react** (`ArrowRight`, `ArrowDown`, `ChevronUp`, `Info`, `X`)
+- **Alias de ruta:** `@` -> `src`
+- **Sin routers, sin GSAP, sin Lenis.**
 
 ---
 
-### 3. 🌅 Los Beneficios Tangibles de la Libertad en mi Vida
-- **🧘 Salud Mental & Cero Burnout:** Despedirse para siempre de sprints imposibles, estrés crónico y jefes tóxicos.
-- **💻 Programar por Amor al Arte:** Construir videojuegos indie, software Open Source o proyectos que impacten vidas sin la presión de monetizarlos a la fuerza desde el día uno.
-- **🌍 Vivir Viajando (Libertad Geográfica):** Pasar meses en Japón, en la montaña o frente a la playa sin pedir permiso ni vacaciones.
-- **❤️ Presencia Familiar & Salud:** Despertar sin alarmas, hacer deporte a plena luz del día y estar presente con seres queridos.
-- **Módulo Interactivo:** *Simulador de 24 Horas: Un Día Típico en Libertad vs En la Carrera de la Rata*, recorriendo hora por hora (de 06:00 a 23:00) cómo se transforma tu vida.
+## 📐 Arquitectura de la Página
+
+- **Pista de Scroll Externa:** `relative h-[500vh]` (distancia total de desplazamiento).
+- **Escena Sticky:** `sticky top-0 w-full h-screen overflow-hidden`.
+- **Composición Visual:**
+  1. `<video>` con `object-cover` como base.
+  2. `<canvas width="1920" height="1080">` que dibuja fotogramas decodificados en tiempo real para un scrubbing suave a 60 FPS (transición de opacidad de 300ms al activarse el banco de fotogramas).
+  3. Capa de superposición con **Navbar dinámico** y **3 secciones secuenciales**.
 
 ---
 
-## ⚡ ¿Cómo Abrir y Usar la Página Web?
+## 🎛️ Secciones Secuenciales & Opacidades
 
-1. **En tu navegador:** Visita [http://localhost:3000](http://localhost:3000)
-2. **O simplemente haz doble clic:** en el archivo [iniciar.bat](file:///c:/Users/marin/OneDrive/Documentos/GitHub/My-Objective/iniciar.bat) o en [index.html](file:///c:/Users/marin/OneDrive/Documentos/GitHub/My-Objective/index.html).
+Cada sección se desvanece por completo antes de que aparezca la siguiente, con transiciones escalonadas (*stagger*) para los textos:
+
+1. **SECCIÓN 1 — THE GOAL (Inicio del viaje)**
+   - H1: `FINANCIAL FREEDOM` (Color `#1D3045`)
+   - Subtítulo: `BUILD STABILITY. BUY BACK YOUR TIME.`
+   - Botón circular con flecha derecha para avanzar suavemente.
+   - Visible en el tramo luminoso y etéreo del video.
+
+2. **SECCIÓN 2 — BUILDING THE FOUNDATION (Disciplina y Propósito)**
+   - H2: `SAVE WITH DISCIPLINE, INVEST WITH PURPOSE, AND BUILD INCOME THAT GIVES YOU MORE CONTROL OVER YOUR TIME.`
+   - Variaciones sutiles de opacidad en las palabras clave *discipline*, *purpose* y *time*.
+   - Columna lateral con botón de avance, 3 puntos indicadores de avance y retorno arriba.
+
+3. **SECCIÓN 3 — THE RESULT (Soberanía y Madurez)**
+   - Eyebrow: `Your time. Your choices.`
+   - H2: `WORK TOWARD FREEDOM, LIVE ON YOUR TERMS.` (Tipografía blanca sobre el paisaje oscuro y maduro del video).
+   - Botón CTA: `START BUILDING` con círculo blanco interactivo.
 
 ---
 
-*Diseñado para convertir código, disciplina e interés compuesto en libertad absoluta.*
+## 🚀 Cómo Ejecutar
+
+```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
+
+# Compilar para producción
+npm run build
+```
+
+O simplemente haz doble clic en el archivo [iniciar.bat](file:///c:/Users/marin/OneDrive/Documentos/GitHub/My-Objective/iniciar.bat).
