@@ -58,12 +58,12 @@ const SECTORS: SectorDef[] = [
       'Dominar habilidades técnicas de alto impacto y alto valor.',
       'El trabajo como cimiento activo para alimentar la libertad financiera.',
     ],
-    macroNote: 'DISTRITO DE SOFTWARE & OFICINAS',
+    macroNote: 'SOFTWARE & DESARROLLO',
     focal: { x: 54, y: 28 },
     details: {
       tag: 'TALLER DIGITAL',
       items: [
-        'Miniature setup: laptop, dual display y código',
+        'Setup: laptop, dual display y código',
         'Generación de ingresos activos sólidos',
         'Desarrollo de disciplina técnica e innovación',
         'Código limpio y arquitectura escalable',
@@ -89,9 +89,8 @@ const SECTORS: SectorDef[] = [
     details: {
       tag: 'SISTEMA FINANCIERO',
       items: [
-        'Fondo de tranquilidad para imprevistos (12 meses)',
+        'Fondo de tranquilidad para imprevistos',
         'Inversión periódica en activos productivos e indexados',
-        'Sendas doradas que alimentan el resto de la ciudad',
         'Independencia de fuentes únicas de ingreso',
       ],
     },
@@ -115,8 +114,8 @@ const SECTORS: SectorDef[] = [
     details: {
       tag: 'EXPERIENCIAS GLOBALES',
       items: [
-        'Avión listo en la pista costera de despegue',
-        'Mapamundi y maleta vintage de explorador',
+        'Avión listo en la pista de despegue',
+        'Mapamundi y maleta de explorador',
         'Viajar como aprendiz cultural sin pedir permiso',
         'Nuevos idiomas, culturas y memorias imborrables',
       ],
@@ -136,12 +135,12 @@ const SECTORS: SectorDef[] = [
       'La calma de escuchar el mar un martes por la mañana sin alarmas.',
       'Espacio mental para contemplar y descansar.',
     ],
-    macroNote: 'AGUA DE RESINA & ARENA BLANCA',
+    macroNote: 'MAR & ARENA BLANCA',
     focal: { x: 48, y: 82 },
     details: {
       tag: 'DESCONEXIÓN CONSCIENTE',
       items: [
-        'Agua turquesa modelada en resina y arena fina',
+        'Agua turquesa y arena fina',
         'Hamaca, palmeras y lectura junto a las olas',
         'Paz mental sin alarmas, notificaciones ni presiones',
         'Equilibrio restaurador para la mente',
@@ -167,8 +166,8 @@ const SECTORS: SectorDef[] = [
     details: {
       tag: 'BIENESTAR FÍSICO',
       items: [
-        'Bicicleta de ruta en sendero verde arbolado',
-        'Laguna central y espacios de entrenamiento al aire libre',
+        'Bicicleta en sendero verde arbolado',
+        'Lago central y espacios de entrenamiento al aire libre',
         'Longevidad para vivir con plenitud cada año ganado',
         'Claridad mental a través del ejercicio constante',
       ],
@@ -185,16 +184,14 @@ const SECTORS: SectorDef[] = [
     primaryQuote: 'Estar presente.',
     secondaryQuotes: [
       'Compartir más tiempo con quienes de verdad importan.',
-      'No perderme los almuerzos largos, las risas ni los cumpleaños.',
+      'No perderme los almuerzos largos, los asados, las risas ni los cumpleaños.',
       'Brindar tranquilidad, respaldo y serenidad a los míos.',
     ],
-    macroNote: 'TERRAZA FAMILIAR BAJO GUIRNALDAS',
+    macroNote: 'REUNIÓN FAMILIAR',
     focal: { x: 84, y: 54 },
     details: {
       tag: 'HOGAR & CONVIVENCIA',
       items: [
-        'Casas en la ladera con jardines y terrazas cálidas',
-        'Mesa comunal con comida casera bajo luces doradas',
         'Tiempo de calidad sin mirar el reloj ni el teléfono',
         'Apoyo incondicional a los seres queridos',
       ],
@@ -205,7 +202,7 @@ const SECTORS: SectorDef[] = [
     numberStr: '07',
     title: 'NATURALEZA Y EXPLORACIÓN',
     subtitle: 'La perspectiva ante la inmensidad del paisaje',
-    badge: 'SECTOR 07 — SIERRA & MONTAÑAS',
+    badge: 'SECTOR 07 — MONTAÑAS',
     detailImage: '/diorama_naturaleza.jpg',
     icon: Trees,
     primaryQuote: 'Reconectar con la tierra.',
@@ -230,25 +227,25 @@ const SECTORS: SectorDef[] = [
     id: 8,
     numberStr: '08',
     title: 'PROYECTOS Y CURIOSIDAD',
-    subtitle: 'Crear con total libertad artística e intelectual',
-    badge: 'SECTOR 08 — BARRIO CREATIVO',
+    subtitle: 'Código independiente, aprendizaje y lectura con calma',
+    badge: 'SECTOR 08 — DESARROLLO & LECTURA',
     detailImage: '/diorama_proyectos.jpg',
     icon: Code,
     primaryQuote: 'Crear porque quiero.',
     secondaryQuotes: [
       'Aprender porque puedo, no solo por sobrevivir.',
-      'Escribir código, componer música o explorar ideas sin prisa.',
-      'El placer puro de construir proyectos por vocación.',
+      'Escribir software por pura pasión y devorar libros sin prisa.',
+      'El placer de profundizar en el conocimiento por vocación.',
     ],
-    macroNote: 'TALLER DE ARTE, MÚSICA & CÓDIGO',
+    macroNote: 'ESTUDIO DE CÓDIGO & BIBLIOTECA PERSONAL',
     focal: { x: 34, y: 56 },
     details: {
-      tag: 'CREATIVIDAD LIBRE',
+      tag: 'CÓDIGO & LECTURA',
       items: [
-        'Guitarra acústica, cuadernos de bocetos y librero',
-        'Espacio para proyectos de software de código abierto',
-        'Exploración intelectual sin ataduras comerciales',
-        'Tiempo dedicado a la curiosidad y al aprendizaje continuo',
+        'Setup minimalista: laptop con código, teclado mecánico y café',
+        'Gran biblioteca de madera repleta de libros y sillón de lectura',
+        'Desarrollo de proyectos de software personales sin presiones',
+        'Tiempo dedicado a la lectura, el pensamiento y la curiosidad',
       ],
     },
   },
@@ -271,9 +268,9 @@ const SECTORS: SectorDef[] = [
     details: {
       tag: 'CIUDAD INTEGRADA',
       items: [
-        'Torre de reloj dorada como corazón neurálgico',
-        'Todas las sendas de la ciudad costera unificadas',
-        'La libertad financiera como dueña de tu propio tiempo',
+        'Torre de reloj dorada como corazón de mi proyecto de vida',
+        'Todas los caminos de la ciudad unificados',
+        'La libertad financiera como dueña de mi propio tiempo',
         'La culminación de un proyecto de vida equilibrado',
       ],
     },
@@ -372,7 +369,7 @@ export default function App() {
           </p>
 
           <p className="max-w-xl text-xs sm:text-sm md:text-base text-slate-300 font-light mt-6 leading-relaxed">
-            Una ciudad costera que representa la vida que elijo construir: tiempo,
+            Una maqueta que representa la vida que elijo construir: tiempo,
             estabilidad, salud, experiencias y libertad de elegir.
           </p>
 
@@ -381,7 +378,7 @@ export default function App() {
             onClick={() => setIsIntro(false)}
             className="group mt-10 flex items-center space-x-3 px-8 py-4 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-mono font-bold text-sm tracking-widest uppercase shadow-[0_0_30px_rgba(52,211,153,0.6)] hover:shadow-[0_0_50px_rgba(52,211,153,0.9)] transition-all duration-300 transform hover:scale-105 cursor-pointer"
           >
-            <span>EXPLORAR LA CIUDAD COSTERA</span>
+            <span>EXPLORAR LA MAQUETA</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
           </button>
         </div>
@@ -457,7 +454,7 @@ export default function App() {
               >
                 <ArrowLeft className="w-4 h-4 text-emerald-400 group-hover:text-slate-950 transition-colors" />
                 <span className="text-xs font-mono font-bold tracking-wider uppercase">
-                  VOLVER A LA CIUDAD COSTERA
+                  VOLVER A LA CIUDAD
                 </span>
               </button>
 
