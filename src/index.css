@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Helvetica Neue ME', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #1D3045;
+    color: #f8fafc;
+  }
+}
+
+/* Macro camera depth & diorama stage */
+.maquette-stage {
+  perspective: 1800px;
+  transform-style: preserve-3d;
+}
+
+.maquette-pedestal {
+  transform-style: preserve-3d;
+  will-change: transform, box-shadow, filter;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+/* Highlight standout glow */
+.highlight-standout {
+  box-shadow: 0 35px 80px -15px rgba(0, 0, 0, 0.9), 0 0 50px -5px rgba(52, 211, 153, 0.25), 0 0 0 2px rgba(52, 211, 153, 0.3);
+}
+
+/* Lens flare and studio spotlight */
+.studio-spotlight {
+  background: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.03) 45%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Printed miniature photograph pinned to the maquette */
+.printed-photo {
+  background: #ffffff;
+  padding: 5px 5px 16px 5px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  transform-origin: center center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.printed-photo:hover {
+  transform: scale(1.08) translateY(-4px) !important;
+  box-shadow: 0 20px 35px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.3);
+  z-index: 50;
+}
+
+/* Miniature architectural details */
+.diorama-glow {
+  box-shadow: 0 0 50px -5px rgba(251, 191, 36, 0.35);
+}
+
+/* Subtle Vignette */
+.vignette-overlay {
+  background: radial-gradient(circle at 50% 50%, transparent 55%, rgba(6, 11, 19, 0.6) 100%);
+  pointer-events: none;
+}
+
+/* Smooth zoom pulse */
+@keyframes macroPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+.animate-macro-pulse {
+  animation: macroPulse 4s ease-in-out infinite;
+}
