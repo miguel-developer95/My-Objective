@@ -450,7 +450,7 @@ export default function App() {
               <button
                 onClick={handleGoBack}
                 className="group flex items-center space-x-2.5 px-4 py-2.5 rounded-full bg-slate-950/85 hover:bg-emerald-500 text-white hover:text-slate-950 border border-emerald-400/40 hover:border-emerald-400 shadow-2xl backdrop-blur-md transition-all duration-300 transform hover:-translate-x-1 cursor-pointer"
-                title="Volver a la ciudad costera (Escape)"
+                title="Volver a la ciudad (Escape)"
               >
                 <ArrowLeft className="w-4 h-4 text-emerald-400 group-hover:text-slate-950 transition-colors" />
                 <span className="text-xs font-mono font-bold tracking-wider uppercase">
@@ -729,7 +729,7 @@ export default function App() {
             <p className="text-xs leading-relaxed text-slate-400 mb-6">
               Haz clic en cualquiera de los números para explorar esa imagen en detalle con
               toda su información, y pulsa el botón{' '}
-              <strong className="text-emerald-400">"VOLVER A LA CIUDAD COSTERA"</strong>{' '}
+              <strong className="text-emerald-400">"VOLVER A LA CIUDAD"</strong>{' '}
               (o tecla Esc) para regresar en cualquier momento.
             </p>
 
